@@ -31,7 +31,7 @@ public class SoldierChess implements Chess {
     @Override
     public boolean check(int[][] map, int currentRow, int currentColumn, int toRow, int toColumn, boolean isBlack) {
         int columnDistance = toColumn - currentColumn;
-        int rowDistance = toRow - currentColumn;
+        int rowDistance = toRow - currentRow;
         //黑色棋子
         if(isBlack){
             //当前棋子未过河，只能向下移动一格
